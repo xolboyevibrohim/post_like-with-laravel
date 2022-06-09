@@ -4,7 +4,7 @@
 <div class="row d-flex justify-content-center ">
     <div class="col-3 bg-white p-2">
         <form action="{{route('register')}}" method="POST">
-            @csrf
+            @csrf 
             <div class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" class="form-control @error('name') border border-danger @enderror" placeholder="name" name="name"  value="{{old('name')}}" >
